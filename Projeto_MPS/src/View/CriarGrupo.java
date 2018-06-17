@@ -196,10 +196,9 @@ public class CriarGrupo extends javax.swing.JFrame {
             Logger.getLogger(Cadastrar.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        /*   compartilhaMaterial();
-         Compartilhados compart = new Compartilhados();
-         compart.setVisible(true);
-         dispose();*/
+        Compartilhados compart = new Compartilhados();
+        compart.setVisible(true);
+        dispose();
 
     }//GEN-LAST:event_PostarActionPerformed
 

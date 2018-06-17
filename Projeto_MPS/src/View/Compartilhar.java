@@ -21,14 +21,10 @@ import javax.swing.JOptionPane;
  */
 public class Compartilhar extends javax.swing.JFrame {
 
- 
-    
     Connection con = null;
     PreparedStatement pst = null;
     ResultSet rs = null;
 
-
-    
     public Compartilhar() throws ClassNotFoundException {
         initComponents();
         setResizable(false);
@@ -162,17 +158,17 @@ public class Compartilhar extends javax.swing.JFrame {
             Logger.getLogger(Cadastrar.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        /*   compartilhaMaterial();
-         Compartilhados compart = new Compartilhados();
-         compart.setVisible(true);
-         dispose();*/
+        Compartilhados compart = new Compartilhados();
+        compart.setVisible(true);
+        dispose();
 
     }//GEN-LAST:event_PostarActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        Compartilhados compart = new Compartilhados();
-        compart.setVisible(true);
-        dispose();
+         Compartilhados compart = new Compartilhados();
+         compart.setVisible(true);
+         dispose();
+
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
