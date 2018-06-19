@@ -1,7 +1,9 @@
 package Business.model;
 
 import Business.control.MaterialDAO;
+import Business.control.Memento;
 import java.sql.SQLException;
+import java.util.ArrayList;
 
 /**
  *
@@ -42,5 +44,6 @@ public class Material {
         MaterialDAO materialDAO = new MaterialDAO();
         materialDAO.CadastrarMaterial(material);
     }
+
 
 }

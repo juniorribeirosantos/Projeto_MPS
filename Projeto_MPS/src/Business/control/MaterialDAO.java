@@ -6,6 +6,7 @@
 package Business.control;
 
 import Business.control.ConexaoBD;
+import Business.model.Criador;
 import Business.model.Material;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -40,6 +41,11 @@ public class MaterialDAO {
             JOptionPane.showMessageDialog(null, error);
         }
 
+       
+        Criador create = new Criador();
+        
+        create.adicionarMemento(new Memento("Estado Salvo"));
+        
     }
 
 }
